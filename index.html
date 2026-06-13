@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <!-- Logo Section - Replace with your image -->
+      <div class="logo-container" onclick="window.location.href='#home'">
+        <img src="images/logo.jpeg" alt="Logo" class="logo-image" onerror="this.src='https://placehold.co/200x200/2563eb/white?text=R'">
+        <span class="logo-text">Chandan</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects-section">Projects</a></li>
+        <li><a href="#certificates-section">Certificates</a></li>
+        <li><a href="#education-section">Experience</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <i class="fas fa-code"></i> Artificial Intelligence • Developer
+        </div>
+        <h1>Chandan Prit Singh <span></span></h1>
+        <p>Hi, I'm Chandan Prit Singh, a B.Tech Computer Science & Artificial Intelligence student passionate about building intelligent applications and solving real-world problems through technology. My interests lie in Artificial Intelligence, Computer Vision, and Software Development, where I enjoy transforming innovative ideas into impactful projects. I am continuously learning, exploring emerging technologies, and striving to create solutions that make a meaningful difference.</p>
+        <div class="btn-group">
+          <a href="#projects-section" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Explore My Work</a>
+          <a href="#contact-section" class="btn btn-outline"><i class="fas fa-user"></i> Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="profile-container">
+          <img src="images/profile.jpeg" alt="Rohan Mehta" class="profile-picture" onerror="this.src='https://placehold.co/400x400/2563eb/white?text=RM'">
+          <div class="online-badge"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <div class="container">
+    <div class="skills-wrapper">
+      <h3 style="margin-bottom: 1rem; font-weight: 600;"> Tech Stack</h3>
+      <div class="skills-grid">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">C Language</span>
+        <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects Section -->
+  <section id="projects-section">
+    <div class="container">
+      <h2 class="section-title">Featured <span>Projects</span></h2>
+      <div class="projects-grid">
+        <div class="project-card">
+         <!--yaha pr pic upload kr skta hu mai projects ke -->
+          <div class="project-img"><i class=""></i>
+          <img src="images/air-canvas.jpeg" alt="Air Canvas Drawing" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.src='https://placehold.co/600x400/2563eb/white?text=Air+Canvas'"></div>
+          <div class="project-info">
+            
+            <h3>Air Canvas Drawing</h3>
+            <p>Designed and developed an intelligent Air Canvas Drawing system that leverages computer vision and hand-tracking technology to transform finger movements into digital sketches, delivering a seamless and contactless creative experience.</p>
+            <div class="tech-stack"><span>Python</span><span>MediaPipe</span><span>OpenCV</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span></div>
+            <a href="https://aircanvasdrawing.netlify.app/" target="_blank" class="demo-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          </div>
+        </div>.   <!--yaha tk copy krlena new project add krne ke liye-->
+        
+        
+      </div>
+      <div class="explore-wrapper">
+        <button class="explore-btn" onclick="window.open('projects.html', '_blank')"><i class="fas fa-external-link-alt"></i> Browse All Projects →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates-section">
+    <div class="container">
+      <h2 class="section-title">My <span>Certifications</span></h2>
+      <div class="projects-grid">
+        <!--
+        <div class="project-card">
+          <div class="project-img"><i class="fab fa-google"></i></div>
+          <div class="project-info">
+            <h3>Uploaded sonn</h3>
+            <p>uploaded soon</p>
+            <div class="tech-stack"><span>GCP</span><span>Cloud</span><span>DevOps</span></div>
+          </div>
+        </div> -->
+        
+      </div>
+      <div class="explore-wrapper">
+        <button class="explore-btn" onclick="window.open('certificates.html', '_blank')"><i class="fas fa-external-link-alt"></i> View All Certifications →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education-section">
+    <div class="container">
+      <h2 class="section-title">Education & <span>Experience</span></h2>
+      <div class="edu-item">
+        <div class="edu-header"><span class="edu-title"> B.Tech in Computer Science & Artificial Intelligence</span><span class="edu-date">2025 – 2029</span></div>
+        <div class="edu-detail">JK Lakshmipat University (JKLU), Jaipur | Currently Pursuing</div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact-section">
+    <div class="container">
+      <h2 class="section-title">Let's <span>Connect</span></h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p style="margin-bottom: 1.5rem; color: #6b7280;">Passionate about AI, software development, and innovative technology. Always eager to connect, collaborate, and contribute to meaningful projects.</p>
+          <div class="contact-item"><i class="fas fa-envelope"></i><span>chandanxrandhawa2007@gmail.com</span></div>
+          <div class="contact-item"><i class="fas fa-phone-alt"></i><span>+91 8829805833</span></div>
+          <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>Jaipur, India</span></div>
+          <div class="social-links">
+            <a href="https://github.com/ChandanPRitSingh23"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/chandan-prit-singh-a4b026361?utm_source=share_via&utm_content=profile&utm_medium=member_ios"><i class="fab fa-linkedin-in"></i></a>
+            
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Email address" required>
+            <textarea rows="3" placeholder="Your message..."></textarea>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;"><i class="fas fa-paper-plane"></i> Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>Designed & Developed by  <i class="fas fa-rocket" style="color:#0d0d0d;"></i>Chandan Prit Singh</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
