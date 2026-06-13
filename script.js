@@ -51,4 +51,3 @@ document.querySelectorAll('.project-card, .edu-item, .exp-item, .cert-card').for
   observer.observe(el);
 });
 
-//sfsaasfa
