@@ -50,3 +50,5 @@ document.querySelectorAll('.project-card, .edu-item, .exp-item, .cert-card').for
   el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
   observer.observe(el);
 });
+
+//sfsaasfa
