@@ -1,4 +1,8 @@
 // Smooth scroll for navigation links
+
+
+
+
 document.querySelectorAll('.nav-links a, .btn-primary, .btn-outline').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     const hash = this.getAttribute('href');
@@ -62,19 +66,22 @@ document
   .getElementById("contactForm")
   .addEventListener("submit", function (e) {
     e.preventDefault();
+    console.log("Form submitted");
+    console.log(this.from_name.value);
+console.log(this.from_email.value);
+console.log(this.message.value);
 
-    emailjs
-      .sendForm(
-        "portfolio_website",
-        "template_y9j1jzg",
-        this
-      )
-      .then(() => {
-        alert("Message sent successfully!");
-        this.reset();
-      })
-      .catch((error) => {
-        console.error(error);
-        alert("Failed to send message.");
-      });
+   emailjs.sendForm(
+  "portfolio_website",
+  "template_bjx4rxe",
+  this
+)
+.then((response) => {
+  console.log("SUCCESS", response);
+  
+})
+.catch((error) => {
+  console.log("ERROR", error);
+  
+});
   });
