@@ -55,33 +55,4 @@ document.querySelectorAll('.project-card, .edu-item, .exp-item, .cert-card').for
   observer.observe(el);
 });
 
-
-
-
-
-
-emailjs.init("_5v2YRrWe8yvQJMtx");
-
-document
-  .getElementById("contactForm")
-  .addEventListener("submit", function (e) {
-    e.preventDefault();
-    console.log("Form submitted");
-    console.log(this.from_name.value);
-console.log(this.from_email.value);
-console.log(this.message.value);
-
-   emailjs.sendForm(
-  "portfolio_website",
-  "template_bjx4rxe",
-  this
-)
-.then((response) => {
-  console.log("SUCCESS", response);
   
-})
-.catch((error) => {
-  console.log("ERROR", error);
-  
-});
-  });

@@ -1001,3 +1001,73 @@ nav {
     border-top:1px solid #e5e7eb;
     margin-top:50px;
 }
+
+
+
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:18px 20px;
+    border:none;
+    border-radius:16px;
+    background:#ffffff;
+    font-size:16px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.06);
+
+    transition:.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    outline:none;
+
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 10px 30px rgba(59,130,246,.2);
+}
+
+.contact-form textarea{
+    min-height:180px;
+}
+
+.contact-form button{
+    width:220px;
+
+    padding:16px 24px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+      135deg,
+      #4f46e5,
+      #2563eb
+    );
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.contact-form button:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 15px 35px rgba(79,70,229,.35);
+}
