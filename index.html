@@ -166,11 +166,16 @@
         </div>
         <div class="contact-form">
           <form id="contactForm">
-            <input type="text" placeholder="Your name" required>
-            <input type="email" placeholder="Email address" required>
-            <textarea rows="3" placeholder="Your message..."></textarea>
-            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;"><i class="fas fa-paper-plane"></i> Send Message</button>
-          </form>
+  <input type="text" name="name" placeholder="Your name" required>
+
+  <input type="email" name="email" placeholder="Email address" required>
+
+  <textarea name="message" placeholder="Your message..." required></textarea>
+
+  <button type="submit" class="btn btn-primary">
+    Send Message
+  </button>
+</form>
         </div>
       </div>
     </div>
@@ -182,7 +187,7 @@
     <p>Designed & Developed by  <i class="fas fa-rocket" style="color:#0d0d0d;"></i>Chandan Prit Singh</p>
   </div>
 </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

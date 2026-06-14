@@ -51,3 +51,30 @@ document.querySelectorAll('.project-card, .edu-item, .exp-item, .cert-card').for
   observer.observe(el);
 });
 
+
+
+
+
+
+emailjs.init("_5v2YRrWe8yvQJMtx");
+
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "portfolio_website",
+        "template_y9j1jzg",
+        this
+      )
+      .then(() => {
+        alert("Message sent successfully!");
+        this.reset();
+      })
+      .catch((error) => {
+        console.error(error);
+        alert("Failed to send message.");
+      });
+  });
