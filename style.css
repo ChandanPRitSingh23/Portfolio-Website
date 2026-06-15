@@ -256,6 +256,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 2rem;
+  align-items: start;
 }
 
 .project-card {
@@ -264,7 +265,10 @@ nav {
   overflow: hidden;
   border: 1px solid #f0f0f0;
   transition: all 0.3s ease;
-  height: 500px;
+  height:auto;
+  flex-direction: column;
+  display:flex;
+  align-self: start;
 }
 
 .project-card:hover {
@@ -275,20 +279,27 @@ nav {
 
 .project-img {
   background: linear-gradient(135deg, #f3f4f6, #ffffff);
-  height: 300px;
-  width: px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3.9rem;
-  color: #2d52ad;
+  overflow: hidden;
+  
+  
+  
   border-bottom: 1px solid #cacaca;
   
 }
 
+.project-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
 
 .project-info {
-  padding: 1.5rem;
+  
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .project-info h3 {
@@ -302,6 +313,10 @@ nav {
   color: #6b7280;
   line-height: 1.5;
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
 }
 
 .tech-stack {
